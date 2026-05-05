@@ -1,4 +1,4 @@
-const CACHE = 'kaigo-v1';
+const CACHE = 'kaigo-v2';
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(['/kaigo-app/'])).then(() => self.skipWaiting()));
 });
